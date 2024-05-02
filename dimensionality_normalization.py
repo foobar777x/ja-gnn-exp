@@ -1,6 +1,9 @@
 import torch
 import torch.nn as nn
 
+# Linearly scaling the dimensions of all the nodes to match a common dimension
+# This step is done at the time of ingestion of data into the graph to maintain constant dimensionality
+
 class FeatureProjector(nn.Module):
     def __init__(self, input_dims, common_dim):
         super().__init__()
