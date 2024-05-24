@@ -43,7 +43,7 @@ def find_optimal_k(G, target_node, max_k):
 # Example usage
 G = nx.Graph()
 # Add nodes, edges, and weights
-edges = [(1, 2, 10), (1, 3, 5), (2, 3, 3), (1, 4, 2), (3, 4, 8), (4, 5, 1), (5, 6, 7)]
+edges = global.edges
 for u, v, w in edges:
     G.add_edge(u, v, weight=w)
 
