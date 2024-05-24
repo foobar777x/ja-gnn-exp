@@ -40,7 +40,7 @@ def find_optimal_k(G, target_node, max_k):
 
     return optimal_k, max_coefficient, optimal_neighbors
 
-# Example usage
+# Transaction Graph
 G = nx.Graph()
 # Add nodes, edges, and weights
 edges = global.edges
