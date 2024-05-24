@@ -39,18 +39,8 @@ class HeteroGCN(nn.Module):
             h = F.relu(new_h)
         return h
 
-
-# Calculating feature mean and covariance example:
-
-import numpy as np
-
-# Example node features - rows correspond to nodes, columns to features
-node_features = np.array([
-    [1.0, 2.0, 3.0],
-    [4.0, 5.0, 6.0],
-    [7.0, 8.0, 9.0],
-    # Add more nodes as needed
-])
+# Global node features
+node_features = global.nodes
 
 # Calculate the mean of the features
 feature_mean = np.mean(node_features, axis=0)
