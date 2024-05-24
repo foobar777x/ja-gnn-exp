@@ -12,6 +12,7 @@ class FeatureProjector(nn.Module):
             'email': nn.Linear(input_dims['email'], common_dim),
             'phone': nn.Linear(input_dims['phone'], common_dim),
             'device': nn.Linear(input_dims['device'], common_dim)
+            #### additional field not mentioned for data integrity 
         })
 
     def forward(self, node_type, features):
