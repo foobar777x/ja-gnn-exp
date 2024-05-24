@@ -19,9 +19,10 @@ class FeatureProjector(nn.Module):
         return self.projectors[node_type](features)
 
 input_dims = {
-    'transaction': 10,  # example dimensions
-    'email': 5,
-    'phone': 3,
-    'device': 8
+    'transaction': 32,  # example dimensions
+    'email': 32,
+    'phone': 32,
+    'device': 64
+    #### additional field not mentioned for data integrity 
 }
-common_dim = 16  # target common dimension for all node types
+common_dim = 128  # target common dimension for all node types
